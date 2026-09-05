@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MY-FITNESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar">
+
+        <div class="sidebar-logo">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">MF</span>
+                <span class="logo-text">MY-FITNESS</span>
+            </a>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="profile-avatar">M</div>
+
+            <div>
+                <strong id="dashboardUserName">My Profile</strong>
+                <span>Student</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="active">
+                <span>🏠</span>
+                Dashboard
+            </a>
+
+            <a href="workouts.html">
+                <span>💪</span>
+                My Workouts
+            </a>
+
+            <a href="nutrition.html">
+                <span>🥗</span>
+                Nutrition
+            </a>
+
+            <a href="progress.html">
+                <span>📊</span>
+                Progress
+            </a>
+
+            <a href="achievements.html">
+                <span>🏆</span>
+                Achievements
+            </a>
+
+            <a href="profile.html">
+                <span>👤</span>
+                My Profile
+            </a>
+
+            <a href="settings.html">
+                <span>⚙️</span>
+                Settings
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html">
+                <span>🌐</span>
+                Visit Website
+            </a>
+
+            <button type="button" id="dashboardLogout">
+                <span>↪️</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN DASHBOARD -->
+    <main class="dashboard-main">
+
+        <!-- TOP BAR -->
+        <header class="dashboard-topbar">
+
+            <div>
+                <span class="dashboard-date" id="dashboardDate">
+                    Today
+                </span>
+
+                <h1>
+                    Welcome back,
+                    <span id="dashboardGreetingName">
+                        Athlete
+                    </span>! 👋
+                </h1>
+
+                <p>
+                    Ready to become stronger today?
+                </p>
+            </div>
+
+            <div class="dashboard-top-actions">
+
+                <button
+                    type="button"
+                    class="notification-btn"
+                    aria-label="Notifications"
+                >
+                    🔔
+                </button>
+
+                <a href="profile.html" class="dashboard-user">
+
+                    <div class="profile-avatar small">
+                        M
+                    </div>
+
+                    <div>
+                        <strong id="topUserName">
+                            Student
+                        </strong>
+
+                        <span>View Profile</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- QUICK STATS -->
+        <section class="dashboard-stats">
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    🔥
+                </div>
+
+                <div>
+                    <span>Current Streak</span>
+                    <strong>7 Days</strong>
+                    <small>Keep it going!</small>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    💪
+                </div>
+
+                <div>
+                    <span>Workouts</span>
+                    <strong>18</strong>
+                    <small>Completed</small>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    ⚡
+                </div>
+
+                <div>
+                    <span>Total XP</span>
+                    <strong>1,240</strong>
+                    <small>Level 8</small>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    🎯
+                </div>
+
+                <div>
+                    <span>Goal Progress</span>
+                    <strong>68%</strong>
+                    <small>Overall</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAIN GRID -->
+        <section class="dashboard-content-grid">
+
+            <!-- TODAY'S WORKOUT -->
+            <div class="dashboard-card workout-dashboard-card">
+
+                <div class="dashboard-card-header">
+
+                    <div>
+                        <span class="card-label">
+                            TODAY'S WORKOUT
+                        </span>
+
+                        <h2>
+                            Full Body Strength
+                        </h2>
+                    </div>
+
+                    <span class="status-pill">
+                        Ready
+                    </span>
+
+                </div>
+
+
+                <div class="workout-dashboard-info">
+
+                    <div>
+                        <span>⏱️</span>
+                        <strong>30 min</strong>
+                        <small>Duration</small>
+                    </div>
+
+                    <div>
+                        <span>🔥</span>
+                        <strong>8</strong>
+                        <small>Exercises</small>
+                    </div>
+
+                    <div>
+                        <span>📈</span>
+                        <strong>Medium</strong>
+                        <small>Level</small>
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-workout-preview">
+
+                    <div class="mini-exercise">
+                        <span>01</span>
+                        <strong>Push-Ups</strong>
+                        <small>3 × 10</small>
+                    </div>
+
+                    <div class="mini-exercise">
+                        <span>02</span>
+                        <strong>Bodyweight Squats</strong>
+                        <small>3 × 12</small>
+                    </div>
+
+                    <div class="mini-exercise">
+                        <span>03</span>
+                        <strong>Plank</strong>
+                        <small>3 × 30 sec</small>
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="workout-detail.html?workout=full-body-strength"
+                    class="primary-btn dashboard-workout-btn"
+                >
+                    Start Workout →
+                </a>
+
+            </div>
+
+
+            <!-- DAILY GOALS -->
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-header">
+
+                    <div>
+                        <span class="card-label">
+                            DAILY GOALS
+                        </span>
+
+                        <h2>
+                            Keep Moving
+                        </h2>
+                    </div>
+
+                    <a href="goals.html" class="card-link">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="daily-goals-list">
+
+                    <div class="daily-goal">
+
+                        <div class="goal-icon">
+                            💪
+                        </div>
+
+                        <div class="goal-details">
+                            <strong>Complete Workout</strong>
+
+                            <div class="goal-bar">
+                                <div
+                                    class="goal-bar-fill"
+                                    style="width: 100%;"
+                                ></div>
+                            </div>
+
+                            <small>1 / 1 completed</small>
+                        </div>
+
+                        <span class="goal-check">✓</span>
+
+                    </div>
+
+
+                    <div class="daily-goal">
+
+                        <div class="goal-icon">
+                            💧
+                        </div>
+
+                        <div class="goal-details">
+                            <strong>Drink Water</strong>
+
+                            <div class="goal-bar">
+                                <div
+                                    class="goal-bar-fill"
+                                    style="width: 50%;"
+                                ></div>
+                            </div>
+
+                            <small>4 / 8 glasses</small>
+                        </div>
+
+                        <span class="goal-progress-text">
+                            50%
+                        </span>
+
+                    </div>
+
+
+                    <div class="daily-goal">
+
+                        <div class="goal-icon">
+                            🥗
+                        </div>
+
+                        <div class="goal-details">
+                            <strong>Healthy Meals</strong>
+
+                            <div class="goal-bar">
+                                <div
+                                    class="goal-bar-fill"
+                                    style="width: 75%;"
+                                ></div>
+                            </div>
+
+                            <small>3 / 4 meals</small>
+                        </div>
+
+                        <span class="goal-progress-text">
+                            75%
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECOND ROW -->
+        <section class="dashboard-content-grid second-row">
+
+            <!-- PROGRESS -->
+            <div class="dashboard-card progress-dashboard-card">
+
+                <div class="dashboard-card-header">
+
+                    <div>
+                        <span class="card-label">
+                            PROGRESS
+                        </span>
+
+                        <h2>
+                            Your Fitness Journey
+                        </h2>
+                    </div>
+
+                    <a href="progress.html" class="card-link">
+                        View Progress
+                    </a>
+
+                </div>
+
+
+                <div class="dashboard-progress-chart">
+
+                    <div class="chart-bars">
+
+                        <div class="chart-column">
+                            <div
+                                class="chart-bar"
+                                style="height: 45%;"
+                            ></div>
+                            <span>Mon</span>
+                        </div>
+
+                        <div class="chart-column">
+                            <div
+                                class="chart-bar"
+                                style="height: 65%;"
+                            ></div>
+                            <span>Tue</span>
+                        </div>
+
+                        <div class="chart-column">
+                            <div
+                                class="chart-bar"
+                                style="height: 40%;"
+                            ></div>
+                            <span>Wed</span>
+                        </div>
+
+                        <div class="chart-column">
+                            <div
+                                class="chart-bar"
+                                style="height: 80%;"
+                            ></div>
+                            <span>Thu</span>
+                        </div>
+
+                        <div class="chart-column">
+                            <div
+                                class="chart-bar"
+                                style="height: 55%;"
+                            ></div>
+                            <span>Fri</span>
+                        </div>
+
+                        <div class="chart-column">
+                            <div
+                                class="chart-bar"
+                                style="height: 90%;"
+                            ></div>
+                            <span>Sat</span>
+                        </div>
+
+                        <div class="chart-column">
+                            <div
+                                class="chart-bar"
+                                style="height: 70%;"
+                            ></div>
+                            <span>Sun</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACHIEVEMENT -->
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-header">
+
+                    <div>
+                        <span class="card-label">
+                            LATEST ACHIEVEMENT
+                        </span>
+
+                        <h2>
+                            7 Day Streak 🔥
+                        </h2>
+                    </div>
+
+                    <a
+                        href="achievements.html"
+                        class="card-link"
+                    >
+                        All Badges
+                    </a>
+
+                </div>
+
+
+                <div class="featured-achievement">
+
+                    <div class="big-achievement-icon">
+                        🔥
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Consistency Champion
+                        </h3>
+
+                        <p>
+                            You stayed active for seven
+                            consecutive days.
+                        </p>
+
+                        <strong>
+                            +100 XP
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="next-achievement">
+
+                    <div>
+                        <span>Next Achievement</span>
+                        <strong>30 Day Streak</strong>
+                    </div>
+
+                    <div class="mini-progress">
+                        <span>7 / 30</span>
+
+                        <div class="goal-bar">
+                            <div
+                                class="goal-bar-fill"
+                                style="width: 23%;"
+                            ></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NUTRITION + TIMER -->
+        <section class="dashboard-content-grid">
+
+            <!-- MEALS -->
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-header">
+
+                    <div>
+                        <span class="card-label">
+                            TODAY'S NUTRITION
+                        </span>
+
+                        <h2>
+                            Healthy Meals
+                        </h2>
+                    </div>
+
+                    <a
+                        href="nutrition.html"
+                        class="card-link"
+                    >
+                        View Plan
+                    </a>
+
+                </div>
+
+
+                <div class="meal-list">
+
+                    <div class="meal-item">
+
+                        <span class="meal-time">
+                            🌅
+                        </span>
+
+                        <div>
+                            <strong>Breakfast</strong>
+                            <small>Oats + Banana + Milk</small>
+                        </div>
+
+                        <span class="meal-status">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <div class="meal-item">
+
+                        <span class="meal-time">
+                            ☀️
+                        </span>
+
+                        <div>
+                            <strong>Lunch</strong>
+                            <small>Rice + Dal + Vegetables</small>
+                        </div>
+
+                        <span class="meal-status">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <div class="meal-item">
+
+                        <span class="meal-time">
+                            🌤️
+                        </span>
+
+                        <div>
+                            <strong>Snack</strong>
+                            <small>Apple + Nuts</small>
+                        </div>
+
+                        <span class="meal-status pending">
+                            ○
+                        </span>
+
+                    </div>
+
+
+                    <div class="meal-item">
+
+                        <span class="meal-time">
+                            🌙
+                        </span>
+
+                        <div>
+                            <strong>Dinner</strong>
+                            <small>Balanced home meal</small>
+                        </div>
+
+                        <span class="meal-status pending">
+                            ○
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TIMER -->
+            <div class="dashboard-card timer-dashboard-card">
+
+                <div class="dashboard-card-header">
+
+                    <div>
+                        <span class="card-label">
+                            WORKOUT TIMER
+                        </span>
+
+                        <h2>
+                            Stay Focused
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-timer">
+
+                    <div
+                        class="timer-display"
+                        id="dashboardTimer"
+                    >
+                        00:30
+                    </div>
+
+                    <p>
+                        Ready for your next set?
+                    </p>
+
+                    <div class="timer-controls">
+
+                        <button
+                            type="button"
+                            id="timerStart"
+                        >
+                            ▶ Start
+                        </button>
+
+                        <button
+                            type="button"
+                            id="timerPause"
+                        >
+                            ⏸ Pause
+                        </button>
+
+                        <button
+                            type="button"
+                            id="timerReset"
+                        >
+                            ↻ Reset
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MOTIVATION -->
+        <section class="dashboard-motivation">
+
+            <div>
+
+                <span class="section-badge">
+                    TODAY'S MOTIVATION
+                </span>
+
+                <h2>
+                    SMALL STEPS.
+                    <span>BIG RESULTS.</span>
+                </h2>
+
+                <p>
+                    You don't need to be perfect. Just keep showing up.
+                </p>
+
+            </div>
+
+            <a
+                href="workouts.html"
+                class="primary-btn"
+            >
+                Let's Train →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
