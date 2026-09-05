@@ -1,6 +1,7 @@
 /* =========================================================
    MY-FITNESS — AUTH INTEGRATION FIX
-   Normalizes the existing HTML controls for the final script.
+   Keeps the existing final script.js intact while adapting
+   the login page to Username + Password.
    ========================================================= */
 
 (function () {
@@ -58,9 +59,96 @@
         });
     }
 
-    // This script is loaded before script.js, so these changes exist
-    // before script.js registers its DOMContentLoaded handler.
-    prepareControls();
+    function setupUsernameLogin() {
+        const form = document.getElementById("loginForm");
+        const usernameInput = document.getElementById("loginUsername");
+        const passwordInput = document.getElementById("loginPassword");
+        const message = document.getElementById("loginMessage");
 
-    document.addEventListener("DOMContentLoaded", setupPasswordToggle);
+        if (!form || !usernameInput || !passwordInput) return;
+
+        // Capture the submit before script.js's old email-based handler.
+        form.addEventListener("submit", event => {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+
+            const username = usernameInput.value.trim().toLowerCase();
+            const password = passwordInput.value;
+
+            if (!username || !password) {
+                showLoginMessage("Please enter your username and password.", "error");
+                return;
+            }
+
+            let user = null;
+            try {
+                user = JSON.parse(localStorage.getItem("myFitnessUser")) || null;
+            } catch (error) {
+                user = null;
+            }
+
+            if (!user) {
+                showLoginMessage(
+                    "No MY-FITNESS account found. Please create your student account first.",
+                    "error"
+                );
+                return;
+            }
+
+            // Username is supported directly when available. For existing demo
+            // accounts, the person's name is also accepted as the username.
+            const storedUsername = String(user.username || "").trim().toLowerCase();
+            const storedName = String(user.name || "").trim().toLowerCase();
+            const storedEmailName = String(user.email || "")
+                .split("@")[0]
+                .trim()
+                .toLowerCase();
+
+            const usernameMatches =
+                username === storedUsername ||
+                username === storedName ||
+                username === storedEmailName;
+
+            if (!usernameMatches || user.password !== password) {
+                showLoginMessage("Incorrect username or password.", "error");
+                return;
+            }
+
+            localStorage.setItem("myFitnessLoggedIn", "true");
+
+            const remember = document.getElementById("rememberMe");
+            if (remember?.checked) {
+                localStorage.setItem("myFitnessRemembered", "true");
+            } else {
+                localStorage.removeItem("myFitnessRemembered");
+            }
+
+            showLoginMessage("Login successful! Opening your dashboard...", "success");
+
+            setTimeout(() => {
+                if (!user.profileCompleted) {
+                    window.location.href = "profile.html";
+                } else if (!user.goalsCompleted) {
+                    window.location.href = "goals.html";
+                } else {
+                    window.location.href = "dashboard.html";
+                }
+            }, 700);
+        }, true);
+
+        function showLoginMessage(text, type) {
+            if (!message) return;
+            message.textContent = text;
+            message.className = "form-message " + type;
+            message.style.display = "block";
+        }
+    }
+
+    // This script is loaded before script.js, so the login capture handler is
+    // registered before script.js's older email-based submit handler.
+    prepareControls();
+    document.addEventListener("DOMContentLoaded", () => {
+        setupPasswordToggle();
+        setupUsernameLogin();
+    });
 })();
