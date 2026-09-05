@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workouts | MY-FITNESS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+                <span class="brand-mark">MF</span>
+                <span class="brand-text">MY-FITNESS</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="workouts.html" class="active">
+                    Workouts
+                </a>
+
+                <a href="exercises.html">
+                    Exercises
+                </a>
+
+                <a href="nutrition.html">
+                    Nutrition
+                </a>
+
+                <a href="progress.html">
+                    Progress
+                </a>
+
+                <a href="calculators.html">
+                    Calculators
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="nav-login">
+                    Login
+                </a>
+
+                <a href="signup.html" class="nav-signup">
+                    Sign Up
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="page-hero">
+
+        <div class="page-hero-content">
+
+            <span class="section-badge">
+                ⚡ WORKOUT LIBRARY
+            </span>
+
+            <h1>
+                TRAIN
+                <span>SMARTER.</span>
+            </h1>
+
+            <p>
+                Choose a workout that matches your fitness
+                goal, level and available time.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WORKOUT CONTROLS ================= -->
+
+    <section class="workout-controls">
+
+        <div class="workout-search">
+
+            <input
+                type="text"
+                id="workoutSearch"
+                placeholder="Search workouts..."
+            >
+
+            <span>🔍</span>
+
+        </div>
+
+
+        <div class="workout-filters">
+
+            <button
+                class="workout-filter active"
+                data-category="all"
+            >
+                All
+            </button>
+
+            <button
+                class="workout-filter"
+                data-category="strength"
+            >
+                Strength
+            </button>
+
+            <button
+                class="workout-filter"
+                data-category="stamina"
+            >
+                Stamina
+            </button>
+
+            <button
+                class="workout-filter"
+                data-category="weight"
+            >
+                Healthy Weight
+            </button>
+
+            <button
+                class="workout-filter"
+                data-category="flexibility"
+            >
+                Flexibility
+            </button>
+
+            <button
+                class="workout-filter"
+                data-category="sports"
+            >
+                Sports
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WORKOUT LIBRARY ================= -->
+
+    <main class="workout-library">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    EXPLORE
+                </span>
+
+                <h2>
+                    Featured Workouts
+                </h2>
+
+            </div>
+
+            <span class="workout-count">
+                10 Workouts
+            </span>
+
+        </div>
+
+
+        <div class="workout-grid">
+
+
+            <!-- ================= WORKOUT 1 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="strength"
+                data-name="full body strength"
+            >
+
+                <div class="workout-image workout-image-1">
+
+                    <span class="workout-tag">
+                        💪 STRENGTH
+                    </span>
+
+                    <span class="workout-level">
+                        Beginner
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Full Body Strength
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 30 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Build overall strength using
+                        simple bodyweight movements.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            🔥 6 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Beginner
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=full-body-strength"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= WORKOUT 2 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="stamina"
+                data-name="cardio stamina"
+            >
+
+                <div class="workout-image workout-image-2">
+
+                    <span class="workout-tag">
+                        ❤️ STAMINA
+                    </span>
+
+                    <span class="workout-level">
+                        Beginner
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Cardio Stamina
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 25 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Improve cardiovascular fitness,
+                        endurance and daily energy.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            🔥 7 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Beginner
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=cardio-stamina"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= WORKOUT 3 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="weight"
+                data-name="active fitness"
+            >
+
+                <div class="workout-image workout-image-3">
+
+                    <span class="workout-tag">
+                        ⚡ FITNESS
+                    </span>
+
+                    <span class="workout-level">
+                        Beginner
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Active Fitness
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 20 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        A fun full-body session designed
+                        to keep you active and moving.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            🔥 6 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Beginner
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=active-fitness"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= WORKOUT 4 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="flexibility"
+                data-name="mobility flow"
+            >
+
+                <div class="workout-image workout-image-4">
+
+                    <span class="workout-tag">
+                        🧘 FLEXIBILITY
+                    </span>
+
+                    <span class="workout-level">
+                        Beginner
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Mobility Flow
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 15 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Improve flexibility, mobility and
+                        movement quality.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            🧘 8 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Beginner
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=mobility-flow"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= WORKOUT 5 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="strength"
+                data-name="upper body power"
+            >
+
+                <div class="workout-image workout-image-5">
+
+                    <span class="workout-tag">
+                        💪 STRENGTH
+                    </span>
+
+                    <span class="workout-level">
+                        Intermediate
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Upper Body Power
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 35 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Strengthen your chest, shoulders,
+                        arms and upper body.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            🔥 8 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Intermediate
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=upper-body-power"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= WORKOUT 6 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="stamina"
+                data-name="endurance challenge"
+            >
+
+                <div class="workout-image workout-image-6">
+
+                    <span class="workout-tag">
+                        🔥 ENDURANCE
+                    </span>
+
+                    <span class="workout-level">
+                        Intermediate
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Endurance Challenge
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 35 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Challenge your stamina with
+                        dynamic cardio movements.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            🔥 9 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Intermediate
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=endurance-challenge"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= WORKOUT 7 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="sports"
+                data-name="sports performance"
+            >
+
+                <div class="workout-image workout-image-7">
+
+                    <span class="workout-tag">
+                        🏆 SPORTS
+                    </span>
+
+                    <span class="workout-level">
+                        Intermediate
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Sports Performance
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 40 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Develop speed, agility, balance
+                        and explosive movement.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            ⚡ 10 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Intermediate
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=sports-performance"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= WORKOUT 8 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="strength"
+                data-name="lower body strength"
+            >
+
+                <div class="workout-image workout-image-8">
+
+                    <span class="workout-tag">
+                        🦵 LOWER BODY
+                    </span>
+
+                    <span class="workout-level">
+                        Intermediate
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Lower Body Strength
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 30 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Build stronger legs, glutes and
+                        lower-body stability.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            🔥 7 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Intermediate
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=lower-body-strength"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= WORKOUT 9 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="sports"
+                data-name="speed agility"
+            >
+
+                <div class="workout-image workout-image-9">
+
+                    <span class="workout-tag">
+                        ⚡ AGILITY
+                    </span>
+
+                    <span class="workout-level">
+                        Advanced
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Speed & Agility
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 30 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Improve quickness, coordination,
+                        reaction and movement speed.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            ⚡ 8 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Advanced
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=speed-agility"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= WORKOUT 10 ================= -->
+
+            <article
+                class="workout-card"
+                data-category="flexibility"
+                data-name="recovery stretch"
+            >
+
+                <div class="workout-image workout-image-10">
+
+                    <span class="workout-tag">
+                        🌿 RECOVERY
+                    </span>
+
+                    <span class="workout-level">
+                        Beginner
+                    </span>
+
+                </div>
+
+
+                <div class="workout-content">
+
+                    <div class="workout-top">
+
+                        <h3>
+                            Recovery Stretch
+                        </h3>
+
+                        <span class="workout-duration">
+                            ⏱ 12 min
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Relax your body and improve
+                        flexibility after training.
+                    </p>
+
+
+                    <div class="workout-stats">
+
+                        <span>
+                            🧘 7 Exercises
+                        </span>
+
+                        <span>
+                            ⭐ Beginner
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="workout-detail.html?workout=recovery-stretch"
+                        class="workout-btn"
+                    >
+                        Start Workout →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div
+            id="noWorkouts"
+            class="no-results"
+            style="display:none;"
+        >
+
+            <div>🔎</div>
+
+            <h3>
+                No workouts found
+            </h3>
+
+            <p>
+                Try another workout name or category.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= PERSONALIZED CTA ================= -->
+
+    <section class="page-cta">
+
+        <div class="page-cta-content">
+
+            <span class="section-badge">
+                PERSONALIZED TRAINING
+            </span>
+
+            <h2>
+                FIND THE WORKOUT
+                <span>THAT FITS YOU.</span>
+            </h2>
+
+            <p>
+                Create your MY-FITNESS profile and get
+                workouts designed around your goals.
+            </p>
+
+            <a
+                href="signup.html"
+                class="primary-btn"
+            >
+                Start Your Fitness Journey →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <span class="brand-mark">
+                        MF
+                    </span>
+
+                    <span class="brand-text">
+                        MY-FITNESS
+                    </span>
+
+                </a>
+
+                <p>
+                    Train smarter. Eat better.
+                    Become stronger every day.
+                </p>
+
+            </div>
+
+
+            <!-- PLATFORM -->
+
+            <div class="footer-links">
+
+                <h4>
+                    Platform
+                </h4>
+
+                <a href="workouts.html">
+                    Workouts
+                </a>
+
+                <a href="exercises.html">
+                    Exercises
+                </a>
+
+                <a href="nutrition.html">
+                    Nutrition
+                </a>
+
+                <a href="progress.html">
+                    Progress
+                </a>
+
+            </div>
+
+
+            <!-- TOOLS -->
+
+            <div class="footer-links">
+
+                <h4>
+                    Tools
+                </h4>
+
+                <a href="calculators.html">
+                    Calculators
+                </a>
+
+                <a href="login.html">
+                    Student Login
+                </a>
+
+                <a href="signup.html">
+                    Create Account
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                MY-FITNESS.
+                Built for a stronger generation.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!--
+        JAVASCRIPT WILL BE ADDED LATER.
+        We are currently completing all HTML pages first.
+    -->
+
+</body>
+</html>
