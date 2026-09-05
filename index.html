@@ -3,52 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="MY-FITNESS — a student fitness platform for workouts, nutrition, progress and healthy habits.">
     <title>MY-FITNESS | Build Your Best Self</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="navbar">
-        <div class="logo">
-            <span class="logo-icon">MF</span>
-            <span>MY-FITNESS</span>
-        </div>
+<header class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="MY-FITNESS Home">
+            <span class="logo-mark">MF</span>
+            <span class="logo-text">MY-FITNESS</span>
+        </a>
 
-        <nav>
+        <nav class="nav-links" aria-label="Main navigation">
             <a href="index.html" class="active">Home</a>
-            <a href="#workouts">Workouts</a>
-            <a href="#exercises">Exercises</a>
-            <a href="#nutrition">Nutrition</a>
-            <a href="#progress">Progress</a>
-            <a href="#calculators">Calculators</a>
+            <a href="workouts.html">Workouts</a>
+            <a href="exercises.html">Exercises</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="progress.html">Progress</a>
+            <a href="calculators.html">Calculators</a>
         </nav>
 
-        <div class="nav-buttons">
-            <a href="login.html" class="login-btn">Login</a>
-            <a href="signup.html" class="signup-btn">Sign Up</a>
+        <div class="nav-actions">
+            <a href="login.html" class="nav-login">Login</a>
+            <a href="signup.html" class="nav-signup">Sign Up</a>
         </div>
-    </header>
+    </div>
+</header>
 
-
-    <!-- HERO SECTION -->
-    <main>
-
-        <section class="hero">
-
+<main>
+    <section class="hero">
+        <div class="hero-container">
             <div class="hero-content">
+                <span class="section-badge">⚡ STUDENT FITNESS PLATFORM</span>
 
-                <div class="hero-badge">
-                    ⚡ STUDENT FITNESS PLATFORM
-                </div>
-
-                <h1>
-                    BUILD YOUR
-                    <span>BEST SELF.</span>
-                </h1>
+                <h1>BUILD YOUR <span>BEST SELF.</span></h1>
 
                 <p>
                     Train smarter, eat better, track your progress,
@@ -56,182 +47,124 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="signup.html" class="primary-btn">
-                        🚀 Start Your Fitness Journey
-                    </a>
-
-                    <a href="#workouts" class="secondary-btn">
-                        🏋️ Explore Workouts
-                    </a>
+                    <a href="signup.html" class="primary-btn">🚀 Start Your Fitness Journey</a>
+                    <a href="workouts.html" class="secondary-btn">🏋️ Explore Workouts</a>
                 </div>
 
                 <div class="hero-stats">
-                    <div>
+                    <div class="hero-stat">
                         <strong>50+</strong>
                         <span>Workouts</span>
                     </div>
-
-                    <div>
+                    <div class="hero-stat">
                         <strong>100+</strong>
                         <span>Exercises</span>
                     </div>
-
-                    <div>
+                    <div class="hero-stat">
                         <strong>24/7</strong>
                         <span>Motivation</span>
                     </div>
                 </div>
-
             </div>
 
-            <div class="hero-visual">
+            <div class="hero-visual" aria-label="MY-FITNESS highlights">
+                <div class="hero-image-card">
+                    <div class="hero-person">🏃</div>
+                </div>
 
-                <div class="fitness-card card-one">
+                <div class="floating-card one">
                     <span>🔥</span>
                     <div>
                         <strong>Daily Streak</strong>
-                        <small>Keep going!</small>
+                        <span>Keep going!</span>
                     </div>
                 </div>
 
-                <div class="fitness-card card-two">
+                <div class="floating-card two">
                     <span>🏆</span>
                     <div>
                         <strong>Level Up</strong>
-                        <small>Earn XP & badges</small>
+                        <span>Earn XP & badges</span>
                     </div>
                 </div>
-
-                <div class="fitness-circle">
-                    <div class="mf-mark">MF</div>
-                </div>
-
             </div>
+        </div>
+    </section>
 
-        </section>
-
-
-        <!-- FEATURES -->
-        <section class="features" id="workouts">
-
-            <div class="section-heading">
-                <span>WHAT WE OFFER</span>
-                <h2>Everything You Need To Get <strong>Fitter.</strong></h2>
-                <p>
-                    One platform for workouts, nutrition, progress,
-                    and your complete fitness journey.
-                </p>
-            </div>
-
-            <div class="feature-grid">
-
-                <article class="feature-card">
-                    <div class="feature-icon">🏋️</div>
-                    <h3>Personalized Workouts</h3>
-                    <p>
-                        Find workouts designed around your fitness
-                        level and goals.
-                    </p>
-                    <a href="#workouts">Explore →</a>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-icon">🥗</div>
-                    <h3>Nutrition & Meals</h3>
-                    <p>
-                        Discover healthy foods, meal ideas,
-                        and nutrition information.
-                    </p>
-                    <a href="#nutrition">Explore →</a>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Progress Tracking</h3>
-                    <p>
-                        Track workouts, measurements, achievements,
-                        and your fitness progress.
-                    </p>
-                    <a href="#progress">Explore →</a>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-icon">🧮</div>
-                    <h3>Fitness Calculators</h3>
-                    <p>
-                        Useful fitness calculations in one simple
-                        and easy-to-use place.
-                    </p>
-                    <a href="#calculators">Calculate →</a>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-icon">🏆</div>
-                    <h3>Goals & Achievements</h3>
-                    <p>
-                        Complete challenges, earn badges,
-                        build streaks, and level up.
-                    </p>
-                    <a href="#progress">View Goals →</a>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- CALL TO ACTION -->
-        <section class="cta">
-
-            <div>
-                <span>READY TO START?</span>
-
-                <h2>
-                    Your Fitness Journey
-                    <strong>Starts Today.</strong>
-                </h2>
-
-                <p>
-                    Create your free student account and
-                    start building your best self.
-                </p>
-            </div>
-
-            <a href="signup.html" class="primary-btn">
-                🚀 Create Free Account
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-logo">
-            <span class="logo-icon">MF</span>
-            MY-FITNESS
+    <section class="features-section">
+        <div class="section-heading">
+            <span class="section-badge">WHAT WE OFFER</span>
+            <h2>Everything You Need To Get <span>Fitter.</span></h2>
+            <p>
+                One platform for workouts, nutrition, progress,
+                calculations and your complete fitness journey.
+            </p>
         </div>
 
-        <p>
-            Build Your Best Self.
-        </p>
+        <div class="features-grid">
+            <article class="feature-card">
+                <div class="feature-icon">🏋️</div>
+                <h3>Personalized Workouts</h3>
+                <p>Find workouts designed around your fitness level and goals.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">🥗</div>
+                <h3>Nutrition & Meals</h3>
+                <p>Discover healthy foods, meal ideas and simple nutrition guidance.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Progress Tracking</h3>
+                <p>Track workouts, achievements, streaks and your fitness journey.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">🧮</div>
+                <h3>Fitness Calculators</h3>
+                <p>Use practical fitness tools in one simple, student-friendly place.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Goals & Achievements</h3>
+                <p>Complete challenges, earn badges, build streaks and level up.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="page-cta">
+        <div>
+            <span class="section-badge">READY TO START?</span>
+            <h2>Your Fitness Journey <span>Starts Today.</span></h2>
+            <p>Build healthy habits, stay active and make progress one day at a time.</p>
+        </div>
+        <a href="signup.html" class="primary-btn">🚀 Create Free Account</a>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div>
+            <a href="index.html" class="logo">
+                <span class="logo-mark">MF</span>
+                <span class="logo-text">MY-FITNESS</span>
+            </a>
+            <p>Build Your Best Self.</p>
+        </div>
 
         <div class="footer-links">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Contact</a>
+            <a href="workouts.html">Workouts</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="progress.html">Progress</a>
+            <a href="login.html">Login</a>
         </div>
 
-        <div class="copyright">
-            © 2026 MY-FITNESS. All Rights Reserved.
-        </div>
+        <div class="copyright">© 2026 MY-FITNESS. All Rights Reserved.</div>
+    </div>
+</footer>
 
-    </footer>
-
-
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
