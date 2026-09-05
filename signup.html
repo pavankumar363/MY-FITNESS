@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | MY-FITNESS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+
+        <!-- LEFT SIDE -->
+        <div class="auth-info">
+
+            <a href="index.html" class="auth-logo">
+                <span class="logo-icon">MF</span>
+                <span>MY-FITNESS</span>
+            </a>
+
+            <div class="auth-info-content">
+                <span class="auth-badge">⚡ STUDENT FITNESS PLATFORM</span>
+
+                <h1>
+                    BUILD YOUR
+                    <span>BEST SELF.</span>
+                </h1>
+
+                <p>
+                    Create your free MY-FITNESS account and start
+                    your fitness journey today.
+                </p>
+
+                <div class="auth-benefits">
+
+                    <div>
+                        <span>🏋️</span>
+                        <div>
+                            <strong>Personalized Workouts</strong>
+                            <small>Workouts designed around your goals.</small>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>🥗</span>
+                        <div>
+                            <strong>Nutrition Guidance</strong>
+                            <small>Discover healthy meals and food choices.</small>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>📊</span>
+                        <div>
+                            <strong>Track Your Progress</strong>
+                            <small>See your fitness journey improve.</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SIGNUP FORM -->
+        <div class="auth-card">
+
+            <div class="auth-card-header">
+                <span>CREATE ACCOUNT</span>
+
+                <h2>Join MY-FITNESS</h2>
+
+                <p>
+                    Start your fitness journey in a few simple steps.
+                </p>
+            </div>
+
+            <form id="signupForm">
+
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="signupName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+
+                        <input
+                            type="password"
+                            id="signupPassword"
+                            placeholder="Create password"
+                            minlength="6"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm password"
+                            minlength="6"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <label class="terms-check">
+
+                    <input type="checkbox" id="terms" required>
+
+                    <span>
+                        I agree to the MY-FITNESS terms and privacy policy.
+                    </span>
+
+                </label>
+
+
+                <p id="signupMessage" class="form-message"></p>
+
+
+                <button type="submit" class="auth-submit">
+                    Create My Account →
+                </button>
+
+            </form>
+
+
+            <div class="auth-divider">
+                <span>Already have an account?</span>
+            </div>
+
+
+            <a href="login.html" class="auth-login-link">
+                Login to MY-FITNESS
+            </a>
+
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
