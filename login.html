@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Login | MY-FITNESS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <!-- HEADER -->
+    <header class="auth-header">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">MF</span>
+            <span class="brand-text">MY-FITNESS</span>
+        </a>
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+    </header>
+
+
+    <!-- LOGIN SECTION -->
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <!-- Logo -->
+            <div class="auth-logo">
+                <div class="auth-logo-mark">MF</div>
+            </div>
+
+            <span class="auth-badge">
+                ⚡ STUDENT FITNESS PLATFORM
+            </span>
+
+            <h1>Welcome Back!</h1>
+
+            <p class="auth-subtitle">
+                Login to continue your fitness journey.
+            </p>
+
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm">
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                        autocomplete="email"
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <div class="password-label-row">
+
+                        <label for="loginPassword">
+                            Password
+                        </label>
+
+                        <button
+                            type="button"
+                            class="forgot-password"
+                            id="forgotPassword"
+                        >
+                            Forgot Password?
+                        </button>
+
+                    </div>
+
+                    <div class="password-input">
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                            autocomplete="current-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="toggleLoginPassword"
+                            aria-label="Show password"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Remember Me -->
+                <div class="remember-row">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- Message -->
+                <div
+                    id="loginMessage"
+                    class="form-message"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- Login Button -->
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    Login to MY-FITNESS
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <!-- Divider -->
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+
+            <!-- Signup -->
+            <div class="auth-switch">
+
+                <p>
+                    Don't have an account?
+                    <a href="signup.html">
+                        Create Student Account
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- Demo Notice -->
+            <div class="demo-notice">
+
+                <div class="demo-icon">
+                    💡
+                </div>
+
+                <div>
+                    <strong>Phase 1 Demo Login</strong>
+
+                    <p>
+                        Your account is stored locally in this browser.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SIDE INFORMATION -->
+        <aside class="auth-side">
+
+            <div class="auth-side-content">
+
+                <span class="auth-side-badge">
+                    YOUR FITNESS JOURNEY
+                </span>
+
+                <h2>
+                    Train.
+                    <br>
+                    Track.
+                    <br>
+                    <span>Transform.</span>
+                </h2>
+
+                <p>
+                    Access your personalized workouts,
+                    nutrition plans, progress tracking,
+                    goals and achievements — all in one place.
+                </p>
+
+
+                <!-- Benefits -->
+                <div class="auth-benefits">
+
+                    <div class="auth-benefit">
+
+                        <div class="benefit-icon">
+                            💪
+                        </div>
+
+                        <div>
+                            <strong>Personalized Workouts</strong>
+                            <span>
+                                Train according to your goals.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="auth-benefit">
+
+                        <div class="benefit-icon">
+                            🥗
+                        </div>
+
+                        <div>
+                            <strong>Smart Nutrition</strong>
+                            <span>
+                                Build healthier eating habits.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="auth-benefit">
+
+                        <div class="benefit-icon">
+                            📈
+                        </div>
+
+                        <div>
+                            <strong>Track Progress</strong>
+                            <span>
+                                See your fitness journey grow.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="auth-benefit">
+
+                        <div class="benefit-icon">
+                            🏆
+                        </div>
+
+                        <div>
+                            <strong>Earn Achievements</strong>
+                            <span>
+                                Complete challenges and level up.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="auth-footer">
+
+        <p>
+            © <span id="currentYear"></span>
+            MY-FITNESS. Built for a stronger generation.
+        </p>
+
+    </footer>
+
+
+    <!--
+        IMPORTANT:
+        JavaScript will be added later
+        when we create the final script.js.
+    -->
+
+</body>
+</html>
