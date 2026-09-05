@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculators | MY-FITNESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">MF</span>
+                <span class="logo-text">MY-FITNESS</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="workouts.html">Workouts</a>
+                <a href="exercises.html">Exercises</a>
+                <a href="nutrition.html">Nutrition</a>
+                <a href="progress.html">Progress</a>
+                <a href="calculators.html" class="active">Calculators</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="login.html" class="nav-login">Login</a>
+                <a href="signup.html" class="nav-signup">Sign Up</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+
+            <span class="section-badge">🧮 FITNESS TOOLS</span>
+
+            <h1>
+                KNOW YOUR
+                <span>NUMBERS.</span>
+            </h1>
+
+            <p>
+                Use simple fitness calculators to understand your
+                body, daily energy needs, hydration and workout goals.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- CALCULATOR CARDS -->
+    <main class="calculators-section">
+
+        <div class="section-heading">
+            <span class="section-badge">SMART FITNESS TOOLS</span>
+
+            <h2>
+                Calculate. Understand. <span>Improve.</span>
+            </h2>
+
+            <p>
+                Choose a calculator below and get a quick estimate
+                designed to support healthy fitness habits.
+            </p>
+        </div>
+
+
+        <div class="calculator-grid">
+
+            <!-- BMI -->
+            <div class="calculator-card">
+
+                <div class="calculator-icon">⚖️</div>
+
+                <div class="calculator-content">
+
+                    <span class="calculator-tag">BODY METRICS</span>
+
+                    <h3>BMI Calculator</h3>
+
+                    <p>
+                        Calculate Body Mass Index using your height
+                        and weight.
+                    </p>
+
+                    <div class="calculator-fields">
+
+                        <div class="input-group">
+                            <label for="bmiHeight">Height (cm)</label>
+                            <input
+                                type="number"
+                                id="bmiHeight"
+                                placeholder="Example: 165"
+                                min="1"
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label for="bmiWeight">Weight (kg)</label>
+                            <input
+                                type="number"
+                                id="bmiWeight"
+                                placeholder="Example: 55"
+                                min="1"
+                            >
+                        </div>
+
+                    </div>
+
+                    <button class="calculator-btn" id="calculateBMI">
+                        Calculate BMI
+                    </button>
+
+                    <div class="calculator-result" id="bmiResult">
+                        Enter your height and weight to calculate.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BMR -->
+            <div class="calculator-card">
+
+                <div class="calculator-icon">🔥</div>
+
+                <div class="calculator-content">
+
+                    <span class="calculator-tag">ENERGY</span>
+
+                    <h3>BMR Calculator</h3>
+
+                    <p>
+                        Estimate the energy your body uses at rest.
+                    </p>
+
+                    <div class="calculator-fields">
+
+                        <div class="input-group">
+                            <label for="bmrAge">Age</label>
+                            <input
+                                type="number"
+                                id="bmrAge"
+                                placeholder="Example: 16"
+                                min="1"
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label for="bmrWeight">Weight (kg)</label>
+                            <input
+                                type="number"
+                                id="bmrWeight"
+                                placeholder="Example: 55"
+                                min="1"
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label for="bmrHeight">Height (cm)</label>
+                            <input
+                                type="number"
+                                id="bmrHeight"
+                                placeholder="Example: 165"
+                                min="1"
+                            >
+                        </div>
+
+                    </div>
+
+                    <button class="calculator-btn" id="calculateBMR">
+                        Calculate BMR
+                    </button>
+
+                    <div class="calculator-result" id="bmrResult">
+                        Enter your details to get an estimate.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- WATER -->
+            <div class="calculator-card">
+
+                <div class="calculator-icon">💧</div>
+
+                <div class="calculator-content">
+
+                    <span class="calculator-tag">HYDRATION</span>
+
+                    <h3>Water Intake</h3>
+
+                    <p>
+                        Get a simple hydration reminder based on your
+                        body weight.
+                    </p>
+
+                    <div class="calculator-fields">
+
+                        <div class="input-group">
+                            <label for="waterWeight">Weight (kg)</label>
+                            <input
+                                type="number"
+                                id="waterWeight"
+                                placeholder="Example: 55"
+                                min="1"
+                            >
+                        </div>
+
+                    </div>
+
+                    <button class="calculator-btn" id="calculateWater">
+                        Calculate Water
+                    </button>
+
+                    <div class="calculator-result" id="waterResult">
+                        Enter your weight to get a hydration estimate.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- WORKOUT RECOMMENDATION -->
+            <div class="calculator-card">
+
+                <div class="calculator-icon">🏋️</div>
+
+                <div class="calculator-content">
+
+                    <span class="calculator-tag">WORKOUT PLANNER</span>
+
+                    <h3>Workout Recommendation</h3>
+
+                    <p>
+                        Select your fitness level and choose a suitable
+                        workout focus.
+                    </p>
+
+                    <div class="calculator-fields">
+
+                        <div class="input-group">
+
+                            <label for="fitnessLevel">
+                                Fitness Level
+                            </label>
+
+                            <select id="fitnessLevel">
+
+                                <option value="">
+                                    Select level
+                                </option>
+
+                                <option value="beginner">
+                                    Beginner
+                                </option>
+
+                                <option value="intermediate">
+                                    Intermediate
+                                </option>
+
+                                <option value="advanced">
+                                    Advanced
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="workoutGoal">
+                                Main Goal
+                            </label>
+
+                            <select id="workoutGoal">
+
+                                <option value="">
+                                    Select goal
+                                </option>
+
+                                <option value="strength">
+                                    Build Strength
+                                </option>
+
+                                <option value="stamina">
+                                    Fitness & Stamina
+                                </option>
+
+                                <option value="flexibility">
+                                    Flexibility
+                                </option>
+
+                                <option value="sports">
+                                    Sports Performance
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="calculator-btn"
+                        id="recommendWorkout"
+                    >
+                        Get Recommendation
+                    </button>
+
+                    <div
+                        class="calculator-result"
+                        id="workoutResult"
+                    >
+                        Select your level and goal.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WELLNESS NOTE -->
+        <section class="calculator-note">
+
+            <div class="note-icon">💙</div>
+
+            <div>
+
+                <h3>Use Numbers as Guidance</h3>
+
+                <p>
+                    Fitness calculators provide estimates, not medical
+                    diagnoses. For teenagers, healthy growth and
+                    development are more important than focusing on
+                    weight or calorie targets. Build healthy habits,
+                    stay active, eat balanced meals and get enough rest.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="page-cta">
+
+            <div>
+
+                <span class="section-badge">
+                    READY TO MOVE?
+                </span>
+
+                <h2>
+                    TURN YOUR NUMBERS INTO
+                    <span>ACTION.</span>
+                </h2>
+
+                <p>
+                    Choose a workout and start building healthy habits
+                    today.
+                </p>
+
+            </div>
+
+            <div class="cta-buttons">
+
+                <a href="workouts.html" class="primary-btn">
+                    Explore Workouts →
+                </a>
+
+                <a href="signup.html" class="secondary-btn">
+                    Start Your Journey
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    <span class="logo-mark">MF</span>
+                    <span class="logo-text">MY-FITNESS</span>
+                </a>
+
+                <p>
+                    Train smarter. Eat better. Become stronger.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="workouts.html">Workouts</a>
+                <a href="exercises.html">Exercises</a>
+                <a href="nutrition.html">Nutrition</a>
+                <a href="progress.html">Progress</a>
+                <a href="calculators.html">Calculators</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                MY-FITNESS. All rights reserved.
+            </p>
+
+            <p>
+                Built for healthier student lifestyles.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Keep JS for the final combined version later -->
+    <script src="script.js"></script>
+
+</body>
+</html>
