@@ -938,3 +938,301 @@ footer p {
         font-size: 45px;
     }
 }
+/* =========================================
+   PROFILE SETUP
+========================================= */
+
+.profile-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(66, 165, 255, 0.16),
+            transparent 28%
+        ),
+        linear-gradient(135deg, #f8fcff, #eaf6ff);
+}
+
+.setup-wrapper {
+    width: min(1050px, 92%);
+    margin: auto;
+    padding: 35px 0 45px;
+}
+
+.setup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.setup-progress {
+    display: flex;
+    align-items: center;
+}
+
+.setup-progress > span:not(.progress-line) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #7890a4;
+    border: 1px solid #d7eaf8;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.setup-progress .progress-active {
+    color: white !important;
+    background: linear-gradient(135deg, #0759bb, #2691f2) !important;
+    border-color: transparent !important;
+}
+
+.progress-line {
+    width: 45px;
+    height: 2px;
+    background: #d7eaf8;
+}
+
+.setup-card {
+    background: white;
+    border: 1px solid #dcefff;
+    border-radius: 24px;
+    padding: 45px;
+    box-shadow: 0 25px 70px rgba(30, 100, 160, 0.10);
+}
+
+.setup-title {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.setup-label {
+    color: #0b63ce;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.setup-title h1 {
+    margin-top: 8px;
+    color: #102a43;
+    font-size: 36px;
+}
+
+.setup-title p {
+    margin-top: 10px;
+    color: #7890a4;
+    font-size: 14px;
+}
+
+.setup-section {
+    padding: 28px 0;
+    border-top: 1px solid #e8f2f9;
+}
+
+.setup-section h2 {
+    color: #173f5f;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    color: #7890a4;
+    font-size: 13px;
+    margin-top: -12px;
+    margin-bottom: 16px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.profile-grid .form-group:first-child {
+    grid-column: span 2;
+}
+
+.profile-grid .form-group {
+    margin-bottom: 0;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d5e8f8;
+    border-radius: 11px;
+    outline: none;
+    background: #fbfdff;
+    color: #173f5f;
+    font-size: 14px;
+}
+
+.form-group select:focus {
+    border-color: #2691f2;
+    box-shadow: 0 0 0 4px rgba(38, 145, 242, 0.10);
+}
+
+.input-unit {
+    position: relative;
+}
+
+.input-unit input {
+    padding-right: 55px;
+}
+
+.input-unit span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7890a4;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.info-note {
+    margin-top: 18px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    background: #f1f8ff;
+    color: #668096;
+    font-size: 12px;
+}
+
+
+/* FITNESS LEVEL */
+
+.fitness-level-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.level-option input,
+.activity-option input {
+    display: none;
+}
+
+.level-box {
+    display: block;
+    padding: 20px;
+    border: 1px solid #dcefff;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.level-box strong,
+.level-box small {
+    display: block;
+}
+
+.level-box strong {
+    color: #173f5f;
+    font-size: 14px;
+}
+
+.level-box small {
+    color: #7890a4;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.level-option input:checked + .level-box {
+    border-color: #2691f2;
+    background: #eef8ff;
+    box-shadow: 0 0 0 3px rgba(38, 145, 242, 0.08);
+}
+
+
+/* ACTIVITIES */
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.activity-option span {
+    display: block;
+    padding: 13px 15px;
+    border: 1px solid #dcefff;
+    border-radius: 11px;
+    color: #49657d;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.activity-option input:checked + span {
+    color: #0b63ce;
+    background: #eef8ff;
+    border-color: #2691f2;
+}
+
+
+.setup-submit {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    background: linear-gradient(135deg, #0759bb, #2691f2);
+    font-size: 14px;
+    font-weight: 800;
+    box-shadow: 0 12px 28px rgba(7, 89, 187, 0.20);
+    transition: 0.3s ease;
+}
+
+.setup-submit:hover {
+    transform: translateY(-2px);
+}
+
+.setup-footer {
+    text-align: center;
+    margin-top: 22px;
+    color: #8aa0b1;
+    font-size: 11px;
+}
+
+
+/* PROFILE RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .setup-wrapper {
+        width: 94%;
+    }
+
+    .setup-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .setup-card {
+        padding: 28px 20px;
+    }
+
+    .profile-grid,
+    .fitness-level-grid,
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-grid .form-group:first-child {
+        grid-column: span 1;
+    }
+
+    .setup-title h1 {
+        font-size: 29px;
+    }
+}
