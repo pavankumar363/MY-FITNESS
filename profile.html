@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Profile Setup | MY-FITNESS</title>
-
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth-fix.css">
 </head>
-
 <body class="profile-page">
 
     <div class="setup-wrapper">
-
-        <!-- HEADER -->
         <div class="setup-header">
-
             <a href="index.html" class="auth-logo">
                 <span class="logo-icon">MF</span>
                 <span>MY-FITNESS</span>
             </a>
-
             <div class="setup-progress">
                 <span class="progress-active">1</span>
                 <span class="progress-line"></span>
@@ -28,302 +22,101 @@
                 <span class="progress-line"></span>
                 <span>3</span>
             </div>
-
         </div>
 
-
-        <!-- PROFILE CARD -->
         <div class="setup-card">
-
             <div class="setup-title">
-
-                <span class="setup-label">
-                    STEP 1 OF 3
-                </span>
-
+                <span class="setup-label">STEP 1 OF 3</span>
                 <h1>Let's Build Your Profile</h1>
-
-                <p>
-                    Tell us a little about yourself so MY-FITNESS
-                    can personalize your experience.
-                </p>
-
+                <p>Tell us a little about yourself so MY-FITNESS can personalize your experience.</p>
             </div>
 
-
             <form id="profileForm">
-
-                <!-- PERSONAL INFORMATION -->
                 <div class="setup-section">
-
                     <h2>👤 Personal Information</h2>
-
                     <div class="profile-grid">
-
                         <div class="form-group">
-                            <label for="profileName">
-                                Full Name
-                            </label>
-
-                            <input
-                                type="text"
-                                id="profileName"
-                                placeholder="Your full name"
-                                required
-                            >
+                            <label for="profileName">Full Name</label>
+                            <input type="text" id="profileName" placeholder="Your full name" required>
                         </div>
-
-
                         <div class="form-group">
-                            <label for="profileAge">
-                                Age
-                            </label>
-
-                            <input
-                                type="number"
-                                id="profileAge"
-                                placeholder="Your age"
-                                min="10"
-                                max="100"
-                                required
-                            >
+                            <label for="profileAge">Age</label>
+                            <input type="number" id="profileAge" placeholder="Your age" min="10" max="100" required>
                         </div>
-
-
                         <div class="form-group">
-                            <label for="profileGender">
-                                Gender
-                            </label>
-
+                            <label for="profileGender">Gender</label>
                             <select id="profileGender" required>
-
-                                <option value="">
-                                    Select gender
-                                </option>
-
-                                <option value="male">
-                                    Male
-                                </option>
-
-                                <option value="female">
-                                    Female
-                                </option>
-
-                                <option value="other">
-                                    Other
-                                </option>
-
-                                <option value="prefer-not">
-                                    Prefer not to say
-                                </option>
-
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not">Prefer not to say</option>
                             </select>
                         </div>
-
                     </div>
-
                 </div>
 
-
-                <!-- BODY INFORMATION -->
                 <div class="setup-section">
-
                     <h2>📏 Body Information</h2>
-
                     <div class="profile-grid">
-
                         <div class="form-group">
-
-                            <label for="profileHeight">
-                                Height
-                            </label>
-
+                            <label for="profileHeight">Height</label>
                             <div class="input-unit">
-
-                                <input
-                                    type="number"
-                                    id="profileHeight"
-                                    placeholder="Enter height"
-                                    min="50"
-                                    max="250"
-                                    required
-                                >
-
+                                <input type="number" id="profileHeight" placeholder="Enter height" min="50" max="250" required>
                                 <span>cm</span>
-
                             </div>
-
                         </div>
-
-
                         <div class="form-group">
-
-                            <label for="profileWeight">
-                                Weight
-                            </label>
-
+                            <label for="profileWeight">Weight</label>
                             <div class="input-unit">
-
-                                <input
-                                    type="number"
-                                    id="profileWeight"
-                                    placeholder="Enter weight"
-                                    min="20"
-                                    max="300"
-                                    required
-                                >
-
+                                <input type="number" id="profileWeight" placeholder="Enter weight" min="20" max="300" required>
                                 <span>kg</span>
-
                             </div>
-
                         </div>
-
                     </div>
-
-                    <div class="info-note">
-                        ℹ️ These details are used only to personalize
-                        your fitness experience.
-                    </div>
-
+                    <div class="info-note">ℹ️ These details are used only to personalize your fitness experience.</div>
                 </div>
 
-
-                <!-- FITNESS LEVEL -->
                 <div class="setup-section">
-
                     <h2>🎯 Fitness Level</h2>
-
                     <div class="fitness-level-grid">
-
                         <label class="level-option">
-
-                            <input
-                                type="radio"
-                                name="fitnessLevel"
-                                value="beginner"
-                                required
-                            >
-
-                            <span class="level-box">
-                                <strong>🌱 Beginner</strong>
-                                <small>
-                                    I'm just getting started.
-                                </small>
-                            </span>
-
+                            <input type="radio" name="fitnessLevel" value="beginner" required>
+                            <span class="level-box"><strong>🌱 Beginner</strong><small>I'm just getting started.</small></span>
                         </label>
-
-
                         <label class="level-option">
-
-                            <input
-                                type="radio"
-                                name="fitnessLevel"
-                                value="intermediate"
-                            >
-
-                            <span class="level-box">
-                                <strong>⚡ Intermediate</strong>
-                                <small>
-                                    I exercise regularly.
-                                </small>
-                            </span>
-
+                            <input type="radio" name="fitnessLevel" value="intermediate">
+                            <span class="level-box"><strong>⚡ Intermediate</strong><small>I exercise regularly.</small></span>
                         </label>
-
-
                         <label class="level-option">
-
-                            <input
-                                type="radio"
-                                name="fitnessLevel"
-                                value="advanced"
-                            >
-
-                            <span class="level-box">
-                                <strong>🔥 Advanced</strong>
-                                <small>
-                                    I have strong fitness experience.
-                                </small>
-                            </span>
-
+                            <input type="radio" name="fitnessLevel" value="advanced">
+                            <span class="level-box"><strong>🔥 Advanced</strong><small>I have strong fitness experience.</small></span>
                         </label>
-
                     </div>
-
                 </div>
 
-
-                <!-- ACTIVITIES -->
                 <div class="setup-section">
-
                     <h2>🏆 Sports & Activities</h2>
-
-                    <p class="section-description">
-                        Select activities you enjoy.
-                    </p>
-
+                    <p class="section-description">Select activities you enjoy.</p>
                     <div class="activity-grid">
-
-                        <label class="activity-option">
-                            <input type="checkbox" value="Running">
-                            <span>🏃 Running</span>
-                        </label>
-
-                        <label class="activity-option">
-                            <input type="checkbox" value="Gym">
-                            <span>🏋️ Gym</span>
-                        </label>
-
-                        <label class="activity-option">
-                            <input type="checkbox" value="Football">
-                            <span>⚽ Football</span>
-                        </label>
-
-                        <label class="activity-option">
-                            <input type="checkbox" value="Basketball">
-                            <span>🏀 Basketball</span>
-                        </label>
-
-                        <label class="activity-option">
-                            <input type="checkbox" value="Swimming">
-                            <span>🏊 Swimming</span>
-                        </label>
-
-                        <label class="activity-option">
-                            <input type="checkbox" value="Yoga">
-                            <span>🧘 Yoga</span>
-                        </label>
-
+                        <label class="activity-option"><input type="checkbox" value="Running"><span>🏃 Running</span></label>
+                        <label class="activity-option"><input type="checkbox" value="Gym"><span>🏋️ Gym</span></label>
+                        <label class="activity-option"><input type="checkbox" value="Football"><span>⚽ Football</span></label>
+                        <label class="activity-option"><input type="checkbox" value="Basketball"><span>🏀 Basketball</span></label>
+                        <label class="activity-option"><input type="checkbox" value="Swimming"><span>🏊 Swimming</span></label>
+                        <label class="activity-option"><input type="checkbox" value="Yoga"><span>🧘 Yoga</span></label>
                     </div>
-
                 </div>
 
-
-                <p id="profileMessage" class="form-message"></p>
-
-
-                <button
-                    type="submit"
-                    class="setup-submit"
-                >
-                    Continue to Goals →
-                </button>
-
+                <p id="profileMessage" class="form-message" aria-live="polite"></p>
+                <button type="submit" class="setup-submit">Continue to Goals →</button>
             </form>
-
         </div>
 
-
-        <div class="setup-footer">
-            MY-FITNESS • Build Your Best Self
-        </div>
-
+        <div class="setup-footer">MY-FITNESS • Build Your Best Self</div>
     </div>
 
-
+    <script src="auth-fix.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
