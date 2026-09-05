@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Login | MY-FITNESS</title>
+    <title>Login | MY-FITNESS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="auth-fix.css">
 </head>
 <body class="auth-page">
-
     <header class="auth-header">
         <a href="index.html" class="brand">
             <span class="brand-mark">MF</span>
@@ -19,24 +18,20 @@
 
     <main class="auth-container">
         <section class="auth-card">
-            <div class="auth-logo">
-                <div class="auth-logo-mark">MF</div>
-            </div>
-
-            <span class="auth-badge" style="color:#1769ff;background:#eaf2ff;border:0;">⚡ STUDENT FITNESS PLATFORM</span>
+            <div class="auth-logo"><div class="auth-logo-mark">MF</div></div>
+            <span class="auth-badge" style="color:#1769ff;background:#eaf2ff;border:0;">⚡ MY-FITNESS ACCOUNT</span>
             <h1>Welcome Back!</h1>
             <p class="auth-subtitle">Login to continue your fitness journey.</p>
 
             <form id="loginForm">
                 <div class="form-group">
-                    <label for="loginEmail">Email Address</label>
-                    <input type="email" id="loginEmail" name="email" placeholder="Enter your email" required autocomplete="email">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" name="username" placeholder="Enter your username" required autocomplete="username">
                 </div>
 
                 <div class="form-group">
                     <div class="password-label-row">
                         <label for="loginPassword">Password</label>
-                        <button type="button" class="forgot-password" id="forgotPassword">Forgot Password?</button>
                     </div>
                     <div class="password-input">
                         <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required autocomplete="current-password">
@@ -52,13 +47,8 @@
                 </div>
 
                 <div id="loginMessage" class="form-message" aria-live="polite"></div>
-
-                <button type="submit" class="auth-submit">
-                    Login to MY-FITNESS <span>→</span>
-                </button>
+                <button type="submit" class="auth-submit">Login to MY-FITNESS <span>→</span></button>
             </form>
-
-            <div class="auth-divider"><span>OR</span></div>
 
             <div class="auth-switch">
                 <p>Don't have an account? <a href="signup.html">Create Student Account</a></p>
@@ -66,10 +56,7 @@
 
             <div class="demo-notice">
                 <div class="demo-icon">💡</div>
-                <div>
-                    <strong>Phase 1 Demo Login</strong>
-                    <p>Your account is stored locally in this browser.</p>
-                </div>
+                <div><strong>Personal Demo Account</strong><p>Login with your MY-FITNESS username and password.</p></div>
             </div>
         </section>
 
@@ -78,7 +65,6 @@
                 <span class="auth-side-badge">YOUR FITNESS JOURNEY</span>
                 <h2>Train.<br>Track.<br><span>Transform.</span></h2>
                 <p>Access your personalized workouts, nutrition plans, progress tracking, goals and achievements — all in one place.</p>
-
                 <div class="auth-benefits">
                     <div class="auth-benefit"><div class="benefit-icon">💪</div><div><strong>Personalized Workouts</strong><span>Train according to your goals.</span></div></div>
                     <div class="auth-benefit"><div class="benefit-icon">🥗</div><div><strong>Smart Nutrition</strong><span>Build healthier eating habits.</span></div></div>
@@ -89,10 +75,7 @@
         </aside>
     </main>
 
-    <footer class="auth-footer">
-        <p>© <span id="currentYear"></span> MY-FITNESS. Built for a stronger generation.</p>
-    </footer>
-
+    <footer class="auth-footer"><p>© <span id="currentYear"></span> MY-FITNESS. Built for a stronger generation.</p></footer>
     <script src="auth-fix.js"></script>
     <script src="script.js"></script>
 </body>
