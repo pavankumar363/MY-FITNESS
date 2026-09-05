@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | MY-FITNESS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar">
+
+        <div class="sidebar-logo">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">MF</span>
+                <span class="logo-text">MY-FITNESS</span>
+            </a>
+        </div>
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                M
+            </div>
+
+            <div>
+                <strong id="settingsUserName">
+                    My Profile
+                </strong>
+
+                <span>Student</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span>🏠</span>
+                Dashboard
+            </a>
+
+            <a href="workouts.html">
+                <span>💪</span>
+                My Workouts
+            </a>
+
+            <a href="nutrition.html">
+                <span>🥗</span>
+                Nutrition
+            </a>
+
+            <a href="progress.html">
+                <span>📊</span>
+                Progress
+            </a>
+
+            <a href="achievements.html">
+                <span>🏆</span>
+                Achievements
+            </a>
+
+            <a href="profile.html">
+                <span>👤</span>
+                My Profile
+            </a>
+
+            <a href="settings.html" class="active">
+                <span>⚙️</span>
+                Settings
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html">
+                <span>🌐</span>
+                Visit Website
+            </a>
+
+            <button
+                type="button"
+                id="settingsLogout"
+            >
+                <span>↪️</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="dashboard-main">
+
+        <!-- TOPBAR -->
+        <header class="dashboard-topbar">
+
+            <div>
+
+                <span class="dashboard-date">
+                    ACCOUNT SETTINGS
+                </span>
+
+                <h1>
+                    Your <span>Settings</span> ⚙️
+                </h1>
+
+                <p>
+                    Manage your MY-FITNESS preferences.
+                </p>
+
+            </div>
+
+            <div class="dashboard-top-actions">
+
+                <a
+                    href="dashboard.html"
+                    class="secondary-btn"
+                >
+                    ← Dashboard
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- SETTINGS CONTENT -->
+        <section class="settings-content">
+
+
+            <!-- ACCOUNT -->
+            <div class="settings-card">
+
+                <div class="settings-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            ACCOUNT
+                        </span>
+
+                        <h2>
+                            Account Information
+                        </h2>
+
+                    </div>
+
+                    <span class="settings-icon">
+                        👤
+                    </span>
+
+                </div>
+
+
+                <div class="settings-form">
+
+                    <div class="input-group">
+
+                        <label for="settingsName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="settingsName"
+                            placeholder="Your full name"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="settingsEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="settingsEmail"
+                            placeholder="your@email.com"
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="primary-btn"
+                        id="saveAccountSettings"
+                    >
+                        Save Changes
+                    </button>
+
+                    <div
+                        class="settings-message"
+                        id="accountSettingsMessage"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FITNESS PREFERENCES -->
+            <div class="settings-card">
+
+                <div class="settings-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            FITNESS
+                        </span>
+
+                        <h2>
+                            Fitness Preferences
+                        </h2>
+
+                    </div>
+
+                    <span class="settings-icon">
+                        💪
+                    </span>
+
+                </div>
+
+
+                <div class="settings-form">
+
+                    <div class="input-group">
+
+                        <label for="settingsFitnessLevel">
+                            Fitness Level
+                        </label>
+
+                        <select id="settingsFitnessLevel">
+
+                            <option value="beginner">
+                                Beginner
+                            </option>
+
+                            <option value="intermediate">
+                                Intermediate
+                            </option>
+
+                            <option value="advanced">
+                                Advanced
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="settingsGoal">
+                            Primary Fitness Goal
+                        </label>
+
+                        <select id="settingsGoal">
+
+                            <option value="strength">
+                                Build Strength
+                            </option>
+
+                            <option value="stamina">
+                                Fitness & Stamina
+                            </option>
+
+                            <option value="healthy-weight">
+                                Healthy Weight
+                            </option>
+
+                            <option value="flexibility">
+                                Flexibility & Mobility
+                            </option>
+
+                            <option value="sports">
+                                Sports Performance
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="primary-btn"
+                        id="saveFitnessSettings"
+                    >
+                        Save Preferences
+                    </button>
+
+                    <div
+                        class="settings-message"
+                        id="fitnessSettingsMessage"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+            <div class="settings-card">
+
+                <div class="settings-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            NOTIFICATIONS
+                        </span>
+
+                        <h2>
+                            Notification Preferences
+                        </h2>
+
+                    </div>
+
+                    <span class="settings-icon">
+                        🔔
+                    </span>
+
+                </div>
+
+
+                <div class="settings-options">
+
+                    <div class="settings-option">
+
+                        <div>
+
+                            <strong>
+                                Workout Reminders
+                            </strong>
+
+                            <p>
+                                Get reminders to stay consistent
+                                with your workouts.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="workoutNotifications"
+                                checked
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-option">
+
+                        <div>
+
+                            <strong>
+                                Daily Motivation
+                            </strong>
+
+                            <p>
+                                Receive motivational messages to
+                                keep moving.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="motivationNotifications"
+                                checked
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-option">
+
+                        <div>
+
+                            <strong>
+                                Achievement Alerts
+                            </strong>
+
+                            <p>
+                                Get notified when you unlock
+                                achievements.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="achievementNotifications"
+                                checked
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- APPEARANCE -->
+            <div class="settings-card">
+
+                <div class="settings-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            APPEARANCE
+                        </span>
+
+                        <h2>
+                            Display Preferences
+                        </h2>
+
+                    </div>
+
+                    <span class="settings-icon">
+                        🎨
+                    </span>
+
+                </div>
+
+
+                <div class="settings-options">
+
+                    <div class="settings-option">
+
+                        <div>
+
+                            <strong>
+                                Premium Blue Theme
+                            </strong>
+
+                            <p>
+                                Keep the MY-FITNESS blue and white
+                                appearance.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="blueTheme"
+                                checked
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-option">
+
+                        <div>
+
+                            <strong>
+                                Compact Dashboard
+                            </strong>
+
+                            <p>
+                                Use a more compact dashboard layout.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="compactDashboard"
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SECURITY -->
+            <div class="settings-card">
+
+                <div class="settings-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            SECURITY
+                        </span>
+
+                        <h2>
+                            Password
+                        </h2>
+
+                    </div>
+
+                    <span class="settings-icon">
+                        🔐
+                    </span>
+
+                </div>
+
+
+                <div class="settings-form">
+
+                    <div class="input-group">
+
+                        <label for="currentPassword">
+                            Current Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="currentPassword"
+                            placeholder="Current password"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="newPassword">
+                            New Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="newPassword"
+                            placeholder="New password"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="confirmNewPassword">
+                            Confirm New Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmNewPassword"
+                            placeholder="Confirm new password"
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="primary-btn"
+                        id="changePassword"
+                    >
+                        Update Password
+                    </button>
+
+                    <div
+                        class="settings-message"
+                        id="passwordSettingsMessage"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATA -->
+            <div class="settings-card danger-zone">
+
+                <div class="settings-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            ACCOUNT DATA
+                        </span>
+
+                        <h2>
+                            Data Management
+                        </h2>
+
+                    </div>
+
+                    <span class="settings-icon">
+                        🗂️
+                    </span>
+
+                </div>
+
+
+                <div class="settings-danger-content">
+
+                    <div>
+
+                        <strong>
+                            Reset Demo Account
+                        </strong>
+
+                        <p>
+                            This demo version stores account data
+                            locally in your browser. Resetting will
+                            remove the saved MY-FITNESS demo account
+                            from this browser.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="danger-btn"
+                        id="resetAccount"
+                    >
+                        Reset Account
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRIVACY NOTE -->
+            <section class="settings-note">
+
+                <div class="note-icon">
+                    💙
+                </div>
+
+                <div>
+
+                    <h3>
+                        Phase 1 Demo Account
+                    </h3>
+
+                    <p>
+                        MY-FITNESS currently uses browser-based demo
+                        storage for this prototype. This is not a
+                        secure production authentication system.
+                        A future version can connect to a secure
+                        database and authentication service.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
