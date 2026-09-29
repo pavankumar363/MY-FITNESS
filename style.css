@@ -3724,3 +3724,21 @@ main {
         display: none;
     }
 }
+
+/* Bodybuilder hero */
+.homepage-animated .bodybuilder-hero-card {
+    overflow: hidden;
+    background: #080811;
+}
+.homepage-animated .bodybuilder-hero {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: bodybuilderBreath 4s ease-in-out infinite;
+    filter: saturate(1.08) contrast(1.05);
+}
+@keyframes bodybuilderBreath {
+    0%, 100% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.025) translateY(-4px); }
+}
