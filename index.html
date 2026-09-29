@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="homepage-animated">
 
 <header class="navbar">
     <div class="nav-container">
@@ -51,22 +51,22 @@
 
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <strong>50+</strong>
+                        <strong class="count-up" data-target="50" data-suffix="+">0</strong>
                         <span>Workouts</span>
                     </div>
                     <div class="hero-stat">
-                        <strong>100+</strong>
+                        <strong class="count-up" data-target="100" data-suffix="+">0</strong>
                         <span>Exercises</span>
                     </div>
                     <div class="hero-stat">
-                        <strong>24/7</strong>
+                        <strong class="count-up" data-target="24" data-suffix="/7">0</strong>
                         <span>Motivation</span>
                     </div>
                 </div>
             </div>
 
             <div class="hero-visual" aria-label="MY-FITNESS highlights">
-                <div class="hero-image-card">
+                <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="hero-image-card">
                     <div class="hero-person">🏃</div>
                 </div>
 
@@ -100,7 +100,7 @@
         </div>
 
         <div class="features-grid">
-            <article class="feature-card">
+            <article class="feature-card reveal-card">
                 <div class="feature-icon">🏋️</div>
                 <h3>Personalized Workouts</h3>
                 <p>Find workouts designed around your fitness level and goals.</p>
@@ -161,5 +161,6 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="homepage-animation.js"></script>
 </body>
 </html>
