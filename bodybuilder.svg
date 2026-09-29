@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 760" role="img" aria-label="MY-FITNESS bodybuilder">
+<defs>
+ <radialGradient id="bg" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#34205d"/><stop offset=".55" stop-color="#110c20"/><stop offset="1" stop-color="#05060d"/></radialGradient>
+ <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4c08e"/><stop offset=".45" stop-color="#b96f48"/><stop offset="1" stop-color="#6b342c"/></linearGradient>
+ <linearGradient id="skin2" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ffd09d"/><stop offset=".5" stop-color="#c77b50"/><stop offset="1" stop-color="#7b3d31"/></linearGradient>
+ <linearGradient id="shorts" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#202236"/><stop offset="1" stop-color="#05060d"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="15" flood-opacity=".5"/></filter>
+</defs>
+<rect width="700" height="760" rx="36" fill="url(#bg)"/>
+<g fill="none" stroke="#8b45ff" opacity=".8" filter="url(#glow)">
+ <ellipse cx="360" cy="410" rx="255" ry="305" stroke-width="6"/>
+ <path d="M90 560 Q160 250 360 130 Q555 250 625 560" stroke-width="3"/>
+</g>
+<g filter="url(#shadow)">
+ <!-- head -->
+ <ellipse cx="355" cy="120" rx="63" ry="78" fill="url(#skin)"/>
+ <path d="M300 105 Q320 35 390 55 Q425 72 416 120 Q382 86 330 101Z" fill="#16131b"/>
+ <path d="M330 148 Q355 165 383 146" fill="none" stroke="#673329" stroke-width="6" stroke-linecap="round"/>
+ <!-- neck -->
+ <path d="M323 175 L315 230 Q355 255 395 228 L387 174Z" fill="url(#skin2)"/>
+ <!-- torso -->
+ <path d="M310 214 Q250 220 218 292 Q245 340 274 358 L292 490 Q350 540 416 490 L434 358 Q465 338 490 292 Q455 222 394 214 L355 240Z" fill="url(#skin)"/>
+ <!-- chest -->
+ <path d="M221 285 Q268 238 347 252 Q326 333 270 321 Q235 313 221 285Z" fill="#d99363"/>
+ <path d="M489 285 Q442 238 363 252 Q384 333 440 321 Q475 313 489 285Z" fill="#d99363"/>
+ <path d="M355 246 Q343 330 355 478" fill="none" stroke="#7b3d31" stroke-width="8" opacity=".7"/>
+ <!-- abs -->
+ <g fill="#c47a50" opacity=".95">
+  <ellipse cx="325" cy="348" rx="30" ry="25"/><ellipse cx="385" cy="348" rx="30" ry="25"/>
+  <ellipse cx="322" cy="405" rx="29" ry="25"/><ellipse cx="388" cy="405" rx="29" ry="25"/>
+  <ellipse cx="330" cy="459" rx="26" ry="22"/><ellipse cx="380" cy="459" rx="26" ry="22"/>
+ </g>
+ <!-- left arm -->
+ <path d="M235 252 Q175 235 143 286 Q119 334 145 374 Q166 399 193 374 L239 315Z" fill="url(#skin2)"/>
+ <ellipse cx="154" cy="348" rx="34" ry="48" fill="url(#skin)"/>
+ <!-- right arm -->
+ <path d="M475 252 Q535 235 567 286 Q591 334 565 374 Q544 399 517 374 L471 315Z" fill="url(#skin2)"/>
+ <ellipse cx="556" cy="348" rx="34" ry="48" fill="url(#skin)"/>
+ <!-- shorts -->
+ <path d="M285 475 Q350 510 415 475 L454 620 Q400 645 355 607 Q300 645 246 620Z" fill="url(#shorts)"/>
+ <path d="M355 607 L350 720" stroke="#090a12" stroke-width="24"/>
+ <!-- legs -->
+ <path d="M287 605 Q310 600 346 616 L336 742 Q302 770 264 740 L254 650Z" fill="url(#skin2)"/>
+ <path d="M365 616 Q400 600 423 605 L456 650 L446 740 Q408 770 374 742Z" fill="url(#skin2)"/>
+ <!-- dumbbells -->
+ <g fill="#0a0b12" stroke="#6f4ba5" stroke-width="5">
+  <rect x="83" y="373" width="88" height="18" rx="9" transform="rotate(-20 127 382)"/>
+  <rect x="40" y="350" width="35" height="70" rx="8" transform="rotate(-20 57 385)"/>
+  <rect x="155" y="323" width="35" height="70" rx="8" transform="rotate(-20 172 358)"/>
+  <rect x="539" y="373" width="88" height="18" rx="9" transform="rotate(20 583 382)"/>
+  <rect x="625" y="350" width="35" height="70" rx="8" transform="rotate(20 642 385)"/>
+  <rect x="510" y="323" width="35" height="70" rx="8" transform="rotate(20 527 358)"/>
+ </g>
+</g>
+<text x="350" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="800" fill="#fff">MY-FITNESS</text>
+<text x="350" y="730" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#b982ff">BUILD YOUR BEST SELF</text>
+</svg>
