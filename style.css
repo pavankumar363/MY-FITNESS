@@ -3905,3 +3905,23 @@ main {
     opacity: 1 !important;
     filter: none !important;
 }
+
+/* Hero animation fully disabled */
+.cinematic-hero::before,
+.cinematic-hero::after,
+.hero-particles,
+.hero-light-sweep {
+    animation: none !important;
+    display: none !important;
+}
+.cinematic-hero .hero-visual,
+.cinematic-hero .bodybuilder-hero,
+.cinematic-hero .floating-card,
+.cinematic-hero .hero-image-card,
+.cinematic-hero .hero-title,
+.cinematic-hero .hero-badge,
+.cinematic-hero .hero-stat {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+}
