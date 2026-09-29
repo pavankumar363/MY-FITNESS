@@ -3489,3 +3489,238 @@ main {
         grid-column: 3;
     }
 }
+
+
+/* =========================================================
+   MY-FITNESS HOMEPAGE MOTION SYSTEM
+   ========================================================= */
+.homepage-animated {
+    overflow-x: hidden;
+}
+
+.homepage-animated .hero {
+    position: relative;
+    isolation: isolate;
+    --mouse-x: 0;
+    --mouse-y: 0;
+}
+
+.homepage-animated .hero::before,
+.homepage-animated .hero::after {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    filter: blur(70px);
+    opacity: .16;
+    pointer-events: none;
+    z-index: -1;
+    animation: ambientFloat 9s ease-in-out infinite;
+}
+
+.homepage-animated .hero::before {
+    background: #7c3aed;
+    left: -160px;
+    top: 80px;
+}
+
+.homepage-animated .hero::after {
+    background: #06b6d4;
+    right: -160px;
+    bottom: 20px;
+    animation-delay: -4s;
+}
+
+.homepage-animated .hero-content {
+    animation: heroContentIn .9s cubic-bezier(.2,.8,.2,1) both;
+}
+
+.homepage-animated .hero-visual {
+    transform: translate(
+        calc(var(--mouse-x) * 10px),
+        calc(var(--mouse-y) * 10px)
+    );
+    transition: transform .35s ease-out;
+    animation: heroVisualIn 1s .15s cubic-bezier(.2,.8,.2,1) both;
+}
+
+.homepage-animated .hero-image-card {
+    position: relative;
+    animation: heroCardFloat 5s ease-in-out infinite;
+    box-shadow: 0 25px 70px rgba(0,0,0,.18);
+}
+
+.homepage-animated .hero-person {
+    animation: personPulse 3.5s ease-in-out infinite;
+}
+
+.homepage-animated .floating-card {
+    animation: floatingCard 4s ease-in-out infinite;
+    box-shadow: 0 18px 45px rgba(0,0,0,.16);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.homepage-animated .floating-card.two {
+    animation-delay: -1.8s;
+}
+
+.homepage-animated .floating-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 24px 55px rgba(0,0,0,.22);
+}
+
+.homepage-animated .hero-orbit {
+    position: absolute;
+    border: 1px solid rgba(124,58,237,.22);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: orbitSpin 14s linear infinite;
+}
+
+.homepage-animated .orbit-one {
+    width: 330px;
+    height: 330px;
+    right: 5%;
+    top: 8%;
+}
+
+.homepage-animated .orbit-two {
+    width: 460px;
+    height: 460px;
+    right: -5%;
+    top: -8%;
+    animation-direction: reverse;
+    animation-duration: 20s;
+}
+
+.homepage-animated .hero-buttons .primary-btn,
+.homepage-animated .hero-buttons .secondary-btn,
+.homepage-animated .page-cta .primary-btn {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.homepage-animated .primary-btn:hover,
+.homepage-animated .secondary-btn:hover {
+    transform: translateY(-4px);
+}
+
+.homepage-animated .primary-btn {
+    animation: buttonGlow 2.8s ease-in-out infinite;
+}
+
+.homepage-animated .button-pressed {
+    transform: scale(.97) !important;
+}
+
+.homepage-animated .hero-stat {
+    opacity: 0;
+    animation: statIn .65s ease forwards;
+}
+
+.homepage-animated .hero-stat:nth-child(1) { animation-delay: .65s; }
+.homepage-animated .hero-stat:nth-child(2) { animation-delay: .8s; }
+.homepage-animated .hero-stat:nth-child(3) { animation-delay: .95s; }
+
+.homepage-animated .section-heading,
+.homepage-animated .reveal-card,
+.homepage-animated .reveal-cta {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity .75s ease, transform .75s cubic-bezier(.2,.8,.2,1);
+}
+
+.homepage-animated .section-heading.is-visible,
+.homepage-animated .reveal-card.is-visible,
+.homepage-animated .reveal-cta.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.homepage-animated .reveal-card:nth-child(1) { transition-delay: .05s; }
+.homepage-animated .reveal-card:nth-child(2) { transition-delay: .12s; }
+.homepage-animated .reveal-card:nth-child(3) { transition-delay: .19s; }
+.homepage-animated .reveal-card:nth-child(4) { transition-delay: .26s; }
+.homepage-animated .reveal-card:nth-child(5) { transition-delay: .33s; }
+
+.homepage-animated .feature-card {
+    --tilt-x: 0deg;
+    --tilt-y: 0deg;
+    transform: perspective(900px) rotateX(var(--tilt-y)) rotateY(var(--tilt-x));
+    transition: transform .18s ease, box-shadow .3s ease;
+}
+
+.homepage-animated .feature-card:hover {
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+}
+
+.homepage-animated .feature-icon {
+    transition: transform .3s ease;
+}
+
+.homepage-animated .feature-card:hover .feature-icon {
+    transform: translateY(-5px) scale(1.14) rotate(-4deg);
+}
+
+@keyframes heroContentIn {
+    from { opacity: 0; transform: translateX(-35px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes heroVisualIn {
+    from { opacity: 0; transform: translate(35px, 15px) scale(.94); }
+    to { opacity: 1; }
+}
+
+@keyframes heroCardFloat {
+    0%,100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(.7deg); }
+}
+
+@keyframes personPulse {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.035); }
+}
+
+@keyframes floatingCard {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes ambientFloat {
+    0%,100% { transform: translate(0,0) scale(1); }
+    50% { transform: translate(25px,-20px) scale(1.08); }
+}
+
+@keyframes orbitSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes buttonGlow {
+    0%,100% { box-shadow: 0 8px 25px rgba(124,58,237,.18); }
+    50% { box-shadow: 0 12px 38px rgba(124,58,237,.32); }
+}
+
+@keyframes statIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .homepage-animated *,
+    .homepage-animated *::before,
+    .homepage-animated *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-animated .orbit-one,
+    .homepage-animated .orbit-two {
+        display: none;
+    }
+}
