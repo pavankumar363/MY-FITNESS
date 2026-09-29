@@ -3879,3 +3879,29 @@ main {
     .homepage-animated .hero-visual { transform:none !important; }
     .homepage-animated .bodybuilder-hero { animation-duration:6s; }
 }
+
+/* Homepage static mode */
+.homepage-animated *,
+.homepage-animated *::before,
+.homepage-animated *::after {
+    animation: none !important;
+    transition: none !important;
+}
+.homepage-animated .hero-particles,
+.homepage-animated .hero-light-sweep {
+    display: none !important;
+}
+.homepage-animated .hero-visual,
+.homepage-animated .bodybuilder-hero,
+.homepage-animated .floating-card,
+.homepage-animated .feature-card,
+.homepage-animated .hero-title,
+.homepage-animated .hero-badge,
+.homepage-animated .hero-stat,
+.homepage-animated .section-heading,
+.homepage-animated .reveal-card,
+.homepage-animated .reveal-cta {
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+}
